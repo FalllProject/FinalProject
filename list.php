@@ -2,7 +2,7 @@
 require_once '../layout/_top.php';
 require_once '../helper/connection.php';
 
-$result = mysqli_query($connection, "SELECT * FROM dosen");
+$result = mysqli_query($connection, "SELECT * FROM produk");
 ?>
 
 <section class="section">
@@ -29,9 +29,9 @@ $result = mysqli_query($connection, "SELECT * FROM dosen");
                 ?>
 
                   <tr>
-                    <td><?= $data['nidn'] ?></td>
-                    <td><?= $data['nama_dosen'] ?></td>
-                    <td><?= $data['jenkel_dosen'] ?></td>
+                    <td><?= $data['id'] ?></td>
+                    <td><?= $data['namaBarang'] ?></td>
+                    <td><?= $data['harga'] ?></td>
                   </tr>
 
                 <?php
