@@ -18,17 +18,17 @@ require_once '../helper/connection.php';
 
               <tr>
                 <td>Nama Produk</td>
-                <td><input class="form-control" type="number" name="nidn" size="20" required></td>
+                <td><input class="form-control" type="text" name="namaBarang" id="namaBarang" size="20" required></td>
               </tr>
 
               <tr>
                 <td>Harga</td>
-                <td><input class="form-control" type="text" name="nama" size="20" required></td>
+                <td><input class="form-control" type="text" name="harga" id="harga" size="20" required></td>
               </tr>
 
               <tr>
                 <td>Deskripsi Produk</td>
-                <td colspan="3"><textarea class="form-control" name="alamat" id="alamat" required></textarea></td>
+                <td colspan="3"><textarea class="form-control" name="deskripsi" id="deskripsi" required></textarea></td>
               </tr>
 
               <tr>
