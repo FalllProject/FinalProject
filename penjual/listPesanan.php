@@ -20,6 +20,7 @@ $result = mysqli_query($connection, "SELECT * FROM dosen");
                   <th>Nama Produk</th>
                   <th>Harga</th>
                   <th>Nama Pembeli</th>
+                  <th>Catatan</th>
                   <th style="width: 150">Aksi</th>
                 </tr>
               </thead>
