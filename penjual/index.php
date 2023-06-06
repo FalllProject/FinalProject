@@ -1,5 +1,4 @@
 <?php
-require_once '../layout/_top.php';
 require_once '../helper/connection.php';
 $result = mysqli_query($connection, "SELECT * FROM produk");
 ?>
@@ -9,7 +8,7 @@ $result = mysqli_query($connection, "SELECT * FROM produk");
 <section class="section">
   <div class="section-header d-flex justify-content-between">
   <h1>Dashboard</h1>
-  <a href="./create.php" class="btn btn-primary">Tambah Data</a>
+  <a href="./createProduk.php" class="btn btn-primary">Tambah Data</a>
   </div>
 
 <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
@@ -19,7 +18,7 @@ $result = mysqli_query($connection, "SELECT * FROM produk");
     <div class="col">
         <div class="card">
         
-        <?php echo "<img src='img/$data[image]'/>";?>
+        <?php echo "<img src='gambar/$data[foto]'/>";?>
 
         <div class="card-body">
             <h5 class="card-title"><?= $data['namaBarang'] ?></h5>
@@ -42,9 +41,7 @@ $result = mysqli_query($connection, "SELECT * FROM produk");
 
 </section>
 
-<?php
-require_once '../layout/_bottom.php';
-?>
+
 <!-- Page Specific JS File -->
 <?php
 if (isset($_SESSION['info'])) :
