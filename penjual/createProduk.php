@@ -1,5 +1,4 @@
 <?php
-require_once '../layout/_top.php';
 require_once '../helper/connection.php';
 ?>
 
@@ -13,7 +12,7 @@ require_once '../helper/connection.php';
       <div class="card">
         <div class="card-body">
           <!-- // Form -->
-          <form action="./store.php" method="POST">
+          <form action="./storeProduk.php" method="POST" enctype="multipart/form-data" >
             <table cellpadding="8" class="w-100">
 
               <tr>
@@ -33,7 +32,7 @@ require_once '../helper/connection.php';
 
               <tr>
                 <td>Foto Produk</td>
-                <td><input class="form-control" type="file" enctype = "multipart/form-data" size="20" required></td>
+                <td><input class="form-control" type="file" enctype = "multipart/form-data" name="foto" size="20" required></td>
               </tr>
               
               <tr>
@@ -49,6 +48,3 @@ require_once '../helper/connection.php';
     </div>
 </section>
 
-<?php
-require_once '../layout/_bottom.php';
-?>
