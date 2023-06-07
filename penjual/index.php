@@ -19,7 +19,7 @@ $result = mysqli_query($connection, "SELECT * FROM produk");
     <div class="col">
         <div class="card">
         
-        <?php echo "<img src='gambar/$data[foto]'/>";?>
+        <?php echo "<img src='gambar/$data[foto]'width=250 height=250/>";?>
 
         <div class="card-body">
             <h5 class="card-title"><?= $data['namaBarang'] ?></h5>
