@@ -41,6 +41,10 @@ $result = mysqli_query($connection, "SELECT * FROM produk");
 </div>
 
 </section>
+<?php
+require_once '../layout/_bottom.php';
+?>
+
 
 
 <!-- Page Specific JS File -->

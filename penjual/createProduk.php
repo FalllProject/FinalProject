@@ -48,4 +48,7 @@ require_once '../helper/connection.php';
       </div>
     </div>
 </section>
+<?php
+require_once '../layout/_bottom.php';
+?>
 
