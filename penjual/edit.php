@@ -16,7 +16,7 @@ $query = mysqli_query($connection, "SELECT * FROM produk WHERE id='$id'");
       <div class="card">
         <div class="card-body">
           <!-- // Form -->
-          <form action="./update.php" method="post">
+          <form action="./updateProduk.php" method="POST">
             <?php
             while ($row = mysqli_fetch_array($query)) {
             ?>
