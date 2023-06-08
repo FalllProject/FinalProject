@@ -1,9 +1,3 @@
-<?php
-require_once '../helper/auth.php';
-
-isLogin();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
