@@ -1,5 +1,7 @@
-<?php
-session_start();
-unset($_SESSION['login']);
-$_SESSION['login'] = null;
-header('Location: login.php');
+<?php 
+    session_start();
+    session_unset();
+    session_destroy();
+    $msg="<p class='alert alert-primary' role='alert'> Anda Sudah Logout.. </p>";
+    header("Location: index.php?msg=$msg");
+?> 
