@@ -1,3 +1,7 @@
+<?php
+require_once '../helper/auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
