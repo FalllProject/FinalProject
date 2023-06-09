@@ -17,13 +17,12 @@ $result = mysqli_query($connection, "SELECT * FROM produk");
     <div class="col-3">
         <div class="card">
         
-        <?php echo "<img src='gambar/$data[foto]'width=210 height=210/>";?>
+        <?php echo "<img src='gambar/$data[foto]' class='card-img-top'height=210/>";?>
 
         <div class="card-body">
             <h5 class="card-title"><?= $data['namaBarang'] ?></h5>
             <h6 class="card-title"><?= $data['harga'] ?></h6>
             <p class="card-text"><?= $data['deskripsi'] ?></p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             <a class="btn btn-sm btn-info" href="edit.php?id=<?= $data['id'] ?>">
             <i class="fas fa-edit fa-fw"></i>
             </a>
